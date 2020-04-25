@@ -1,1 +1,1 @@
-# VARK Learning Styles
+# Learning Styles
