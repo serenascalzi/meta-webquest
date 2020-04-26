@@ -33,6 +33,6 @@ $(document).ready(function() {
 
 	let year = date.getFullYear()
 
-	let dates = `<p>&copy; ${year} Serena Scalzi &nbsp;|&nbsp; Last Modified: ${monthOfYear} ${dayOfMonth}, ${year}</p>`
+	let dates = `<p>&copy; ${year} Serena Scalzi</p>`
 	$('#dates').html(dates)
 })
