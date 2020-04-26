@@ -34,6 +34,13 @@ h1 {
 	color: rgb(255,255,255);
 }
 
+@media screen and (max-width: 768px) {
+	h1 {
+		margin-top: 64px;
+		font-size: 250%;
+	}
+}
+
 .section {
 	padding: 5px 20px;
 }
@@ -60,6 +67,10 @@ h1 {
 	background-color: rgb(255,255,255);
 }
 
+a {
+	text-decoration: none;
+}
+
 nav ul li {
 	margin-bottom: 10px;
 	list-style: none;
@@ -67,12 +78,24 @@ nav ul li {
 	text-transform: uppercase;
 }
 
-a {
+@media screen and (max-width: 768px) {
+	nav ul li {
+		margin-bottom: 5px;
+		margin-left: -20px;
+		text-align: center;
+	}
+}
+
+nav ul li a {
 	text-decoration: none;
 	color: rgb(89,88,77);
 }
 
-a:hover {
+nav ul li a:hover {
+	color: rgb(143,87,147);
+}
+
+ul li a, p a {
 	color: rgb(143,87,147);
 }
 
@@ -88,13 +111,70 @@ h2 {
 
 h3 {
 	margin-top: 20px;
-	margin-bottom: -20px;
+	margin-bottom: -10px;
 	text-transform: uppercase;
+}
+
+.iframe-container {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+}
+
+.iframe-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.iframe-bottom {
+	margin-top: 20px;
 }
 
 .center {
 	text-align: center;
 }
+
+table {
+	margin-top: 20px;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+table th, table td {
+	padding: 10px;
+	vertical-align: top;
+	border: 1px solid rgb(89,88,77);
+}
+
+/*
+#resp-table {
+	display: table;
+}
+
+#resp-table-header {
+	display: table-header-group;
+}
+
+.table-header-cell {
+	display: table-cell;
+}
+
+#resp-table-body {
+	display: table-row-group;
+}
+
+.resp-table-row {
+	display: table-row;
+}
+
+.table-body-cell {
+	display: table-cell;
+}
+*/
 
 footer {
 	padding: 10px 0 20px 0;
@@ -197,3 +277,17 @@ footer {
 .group {
 	zoom: 1;
 }
+
+/*
+Device Breakpoints
+Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {...}
+Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {...}
+Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {...}
+Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...}
+Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...}
+*/
